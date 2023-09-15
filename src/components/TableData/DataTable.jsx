@@ -14,7 +14,7 @@ const DataTable = () => {
     name: "",
     username: "",
     email: "",
-    address: "",
+    address: { street: "" },
   });
   const [editableRow, setEditableRow] = useState(null);
   const [tempRow, setTempRow] = useState({
@@ -59,7 +59,7 @@ const DataTable = () => {
       setData(updatedData);
       // Обновляем данные в локальном хранилище при добавлении новой записи
       localStorage.setItem("tableData", JSON.stringify(updatedData));
-      setNewRow({ name: "", username: "", email: "", address: "" });
+      setNewRow({ name: "", username: "", email: "", address: { street: "" } });
     }
   };
 
