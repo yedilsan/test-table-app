@@ -38,7 +38,6 @@ const DataTable = () => {
         "https://jsonplaceholder.typicode.com/users"
       );
       const jsonData = await response.json();
-      // Обновляем состояние данными из API
       setData(jsonData);
       localStorage.setItem("tableData", JSON.stringify(jsonData));
     } catch (error) {
@@ -47,9 +46,7 @@ const DataTable = () => {
   };
 
   useEffect(() => {
-    // Загружаем данные из локального хранилища при монтировании компонента
     loadDataFromLocalStorage();
-    // Затем загружаем данные из API и обновляем состояние
     fetchDataFromBackend();
   }, []);
 
@@ -57,7 +54,6 @@ const DataTable = () => {
     if (newRow.name && newRow.username && newRow.email && newRow.address) {
       const updatedData = [...data, newRow];
       setData(updatedData);
-      // Обновляем данные в локальном хранилище при добавлении новой записи
       localStorage.setItem("tableData", JSON.stringify(updatedData));
       setNewRow({ name: "", username: "", email: "", address: { street: "" } });
     }

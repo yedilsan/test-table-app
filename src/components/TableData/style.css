@@ -1,4 +1,3 @@
-/* Стили для таблицы */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,7 +39,6 @@ td {
     text-align: right;
     color: black;
 }
-/* Стили для кнопок */
 button {
   background-color: #4caf50;
   color: white;
@@ -54,7 +52,6 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Стили для ввода данных */
 input[type="text"] {
   background-color: aliceblue;
   color: black;
