@@ -3,6 +3,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCheck, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 
 library.add(faEdit, faTrash, faCheck);
 
