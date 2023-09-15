@@ -1,8 +1,35 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Управление данными с использованием React: таблица с данными, добавление, редактирование и удаление записей
 
-Currently, two official plugins are available:
+Этот Git-репозиторий содержит React-приложение, созданное для демонстрации управления данными в таблице. В приложении реализованы следующие функции:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Загрузка фейковых данных с бэкэнда.
+- Сохранение данных в локальном хранилище (LocalStorage) для постоянного доступа.
+- Добавление новых записей в таблицу с помощью кнопки "Добавить запись".
+- Удаление записей по клику на соответствующей кнопке.
+- Редактирование существующих записей с возможностью сохранения изменений.
+
+## Демонстрация
+
+[Ссылка на демонстрацию приложения] https://yedilsan.github.io/test-table-app/
+
+## Установка
+
+1. Клонируйте репозиторий на свой компьютер.
+
+git clone [https://github.com/ваш_пользовательский_путь/репозиторий.git](https://github.com/yedilsan/test-table-app.git)
+
+2. Установите зависимости.
+
+cd репозиторий
+
+npm install
+
+4. Запустите приложение.
+   
+npm start
+
+## Использование
+Для просмотра и управления данными откройте приложение в браузере.
+Добавьте новые записи, редактируйте существующие и удаляйте их, чтобы увидеть как управляются данными в таблице.
